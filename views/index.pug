@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  div(class='row')
+    div(id='inserir' class='')
+      h4 Inserir Registro:
+      div
+        <form id='inserirWhisky'>
+          <div class="form-group inline">
+            <label for="fixed_acidity">Fixed Acidity</label>
+            <input type="text" class="form-control" id="fixed_acidity" required>
+          </div>  
+          <div class="form-group inline">
+            <label for="volatile_acidity">Volatile Acidity</label>
+            <input type="text" class="form-control" id="volatile_acidity" required>
+          </div>
+          <div class="form-group">
+            <label for="citric_acid">Citric Acid</label>
+            <input type="text" name='citric_acid' class="form-control" id="citric_acid" required>
+          </div>
+          <div class="form-group">
+            <label for="residual_sugar">Residual Sugar</label>
+            <input type="text" class="form-control" id="residual_sugar" required>
+          </div>
+          <div class="form-group">  
+            <label for="chlorides">Chlorides</label>
+            <input type="text" class="form-control" id="chlorides" required>
+          </div>
+          <div class="form-group">  
+            <label for="free_sulfur_dioxide">Free Sulfur Dioxide</label>
+            <input type="text" class="form-control" id="free_sulfur_dioxide" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Inserir</button>
+        </form>
+  div(class='row')
+    table(id='myTable')
+
+
+      
+
